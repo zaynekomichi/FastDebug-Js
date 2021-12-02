@@ -1,4 +1,3 @@
- let a  = [("{{}}")];
 function log(a){
     console.log(a);
 }
@@ -15,9 +14,11 @@ function ViewList(a){
 function online(data){
     fetch(data).
     then((Response)=>{
-        log(true);
+        log(`${true} Resourse is avalaible`);
+        return true;
     }).catch((error)=>{
-        log(false);
+        log(`Failed to fetch load resourse ->${error}`);
+        return false;
     });
 }
 
