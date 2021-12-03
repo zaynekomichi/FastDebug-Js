@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to FDB 
 
 You can use the [editor on GitHub](https://github.com/zaynekomichi/FastDebug-Js/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
