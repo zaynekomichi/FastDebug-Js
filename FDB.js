@@ -11,14 +11,13 @@ function ViewList(a){
     }
 }
 
-function online(data){
-    fetch(data).
+function checkOnline(data){
+    fetch(data,{mode: 'no-cors'}).
     then((Response)=>{
-        log(`${true} Resourse is avalaible`);
-        return true;
+        log(`Resource is online ->${true}`);   
     }).catch((error)=>{
         log(`Failed to fetch load resourse ->${error}`);
-        return false;
     });
 }
+
 
