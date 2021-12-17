@@ -2,6 +2,29 @@ function log(a){
     console.log(a);
 }
 
+let hospital_data = [
+    {
+        patient_name:"Tanya Chifodya",
+        patient_age:"27",
+        gestation:"31",
+    },
+    {
+        patient_name:"Danai Gwatidza",
+        patient_age:"25",
+        gestation:"12",
+    },
+    {
+        patient_name:"Millicent Bene",
+        patient_age:"24",
+        gestation:"23",
+    },
+    {
+        patient_name:"Cheryl Bulande",
+        patient_age:"26",
+        gestation:"28",
+    }
+];
+
 function ViewList(a){
     if(Array.isArray(a)){
         console.table(a);
@@ -21,3 +44,9 @@ function online(data){
 }
 
 
+ function JsonData(url){
+    return fetch(url)
+    .then(response => response.json())
+    .then(json =>{console.table(json)})
+    .catch(e=>log(`Failed ${e}`));
+}
