@@ -25,7 +25,7 @@ let hospital_data = [
     }
 ];
 
-function ViewList(a){
+export function ViewList(a){
     if(Array.isArray(a)){
         console.table(a);
     }else{
@@ -34,7 +34,7 @@ function ViewList(a){
     }
 }
 
-function online(data){
+export function online(data){
     fetch(data,{mode: 'no-cors'}).
     then((Response)=>{
         console.log('%c Resource is Online ', 'background: white; color: #00aeff');  
@@ -44,7 +44,7 @@ function online(data){
 }
 
 
- function JsonData(url){
+ export function JsonData(url){
     return fetch(url)
     .then(response => response.json())
     .then(json =>{console.table(json)})
