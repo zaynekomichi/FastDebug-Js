@@ -30,7 +30,7 @@ export function ViewList(a){
         console.table(a);
     }else{
         console.error(`data is not Array`);
-        console.error(`Expecting and Array [] but got ->  ${a}`);
+        console.error(`Expecting ad Array [] but got ->  ${a}`);
     }
 }
 
